@@ -1,0 +1,249 @@
+$navbarColor:  #0079d3;
+$searchBarColor: #9fdcfa;
+$iconColor:#99979e;
+$backgroundColor:#f5f5f5;
+$borderColor:#DCDCDC;
+$fontColor:black;
+
+
+.adding-category {
+	input[type=text] {
+		background-color: $backgroundColor;
+    }
+}
+
+body {
+	height: auto;
+	margin: auto;
+    font-family: "Segoe", "Segoe UI", "Arial", "sans-serif";
+	font-style: $fontColor;
+
+	.topnav {
+		background-color:  $navbarColor;
+		a {
+			color: #f2f2f2;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			display: inline-block;
+		}
+		input[type=text] {
+			width: 400px;
+			padding: 6px;
+			border: none;
+			margin:8px 16px 0px 20%;
+			font-size: 17px;
+			background-size: 0%;
+			outline: none;
+			background-color: $searchBarColor;
+		}
+		.name {
+			color: white;
+			padding: 6px;
+			border: 1px solid white;
+			border-radius: 50%;
+		}
+	}
+
+	.sidenav {
+		float: right;
+	}
+	
+	li {
+		list-style: none;
+	}
+
+	h2{
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 6px;
+	}
+
+	.user-input {
+		padding-left: 15px;
+		height: 25px;
+		border: none;
+	}
+
+	.main {
+
+		.add-new-task, .add-new-sub-task, .add-new-category {
+			height: 25px;
+			border: none;
+			outline: none;
+		}
+	  
+	
+		i {
+			color: $iconColor;
+		}
+		
+		.left-container {
+			height: 560px;
+			background-color: $backgroundColor;
+			display: inline-block;
+			width: 22.6%;
+			padding-left: 10px;
+		
+			ul {
+				cursor: pointer;
+				padding: 10px 10px 10px 0px;
+			}
+		
+			li {
+				cursor: pointer;
+				padding: 10px 10px 10px 10px;
+			}
+
+			.adding-category {
+				padding: 10px;
+			}
+		}
+
+		.center-container {
+			vertical-align: top;
+			display: inline-block;
+			padding-left: 15px;
+			width: 45%;
+		
+			.category-name {
+				padding: 10px;
+			}
+		
+			.adding-task {
+				padding: 10px;
+				border-bottom: 1px solid $borderColor;
+			
+				i{
+					color:$iconColor;
+					background-color: white;
+				}
+			}
+			
+			.category-tasks {
+				ul {
+					padding: 0px;
+					margin: 0px 0px 15px 0px;
+					li {
+						padding: 10px;
+						font-size: 15px;
+						border-bottom: 1px solid $borderColor;
+			
+						i{
+							float: right;
+							padding-right: 20px;
+						}
+					}
+				}
+			}			
+		}
+		
+		.right-container {
+			height: 560px;
+			background-color: $backgroundColor;
+			vertical-align: top;
+			display: inline-block;
+			width: 29%;
+		
+			.right-sub-container {
+				padding: 15px 15px 0px 15px;
+				
+			    .steps-task-name{
+					padding-left: 15px;
+					i{
+						padding: 2px 20px 0px 0px;
+						float: right;
+					}
+				}
+
+				ul {
+					cursor: pointer;
+					padding: 20px 10px 10px 10px;
+					margin-bottom: 6px;
+				}
+				li {
+					cursor: pointer;
+					padding: 10px 10px 10px 10px;
+					margin:20px;
+				}
+			
+				h2{
+					padding-left: 15px;
+				}
+			
+				.task-steps{
+					background-color: white;
+				}
+
+				.sub-task-list {
+					margin-top: 5px;	
+					margin-left: 15px;
+					padding-top: 0px;
+					padding-left: 10px;
+			
+				li {
+					padding-left: 0px;
+					padding-top: 10px;
+					margin: 0px;
+					border-bottom: 1px solid $borderColor;
+				}
+				padding: 10px 0px;
+			}
+			}
+		}
+		
+		
+	}
+}
+
+.list {
+	padding: 10px;
+    
+	li {
+		i {
+			padding-right: 15px;
+		}
+	}
+}
+
+.bottom-list {
+	i {
+		padding: 10px 15px 10px 15px;	
+	}
+	padding: 10px 0px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+
+.assigned-task-value {
+	padding-left: 15px;
+}
+
+.assigned-sub-task-value {
+	padding-left: 15px;
+}
+
+.sub-list-step, .sub-list-last-step {
+	padding-bottom: 10px;
+}
+.sub-list-step {
+	border-bottom: 1px solid $borderColor;
+}
+  .adding-sub-tasks {
+	  padding-left: 15px;
+	 padding-bottom: 20px;
+  }
+
+  .task-name {
+	  padding-left: 10px;
+	  font-size: 20px;
+	  font-weight: 400;
+  }
+
+  input[type="checkbox"]:checked + span {
+    text-decoration:line-through;
+ }
+
+ input[type="checkbox"]:checked + span {
+    text-decoration:line-through;
+ }

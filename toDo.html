@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="toDo.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="topnav">
+            <a href="#"><i class="fa fa-th"></i></a>
+            <a href="#">To Do</a>
+            <input type="text" placeholder="Search..">
+            <span class="sidenav">
+                <a href="#"> <i class="fa fa-cog"></i></a>
+                <a href="#"><i class="fa fa-question"></i></a>
+                <span class="name">RA</span>
+            </span>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left-container">
+
+            <div id="left-element">
+                <ul class="list">
+
+                </ul>
+            </div>
+            <div class="adding-category">
+                <span class="fa fa-plus" id="add-to-do"></span>
+                <span class="user-input">
+                    <input id="add-new-category" class="add-new-category" type="text" placeholder="New Category">
+                </span>
+            </div>
+        </div>
+
+        <div class="center-container">
+            <h2 class="category-name"></h2>
+            <div class="adding-task">
+                <span id="add-task"><i class="fa fa-plus"></i></span>
+                <span class="user-input">
+                    <input class="add-new-task" type="text" placeholder="Add New Task">
+                </span>
+            </div>
+            <div id="category-tasks" class="category-tasks">
+                <ul id="task-list" class="task-list">
+
+                </ul>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-sub-container">
+                <div class="task-steps">
+                    <div class="steps-task-name">
+                        <input type="checkbox" class="sub-task-check">
+                        <span class="task-name"></span>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="sub-tasks">
+                        <ul id="sub-task-list" class="sub-task-list"></ul>
+                    </div>
+                    <div class="adding-sub-tasks">
+                        <span class="fa fa-plus" id="add-sub-task"></span>
+                        <span class="user-input">
+                            <input class="add-new-sub-task" type="text" placeholder="Add Step">
+                        </span>
+                    </div>
+                </div>
+                <div class="steps">
+                    <div class="bottom-list">
+                        <i class="fa fa-sun step-icons"></i>
+                        <span>Add to My Day</span>
+                    </div>
+                    <div class="bottom-list">
+                        <div class="sub-list-step">
+                            <i class="fa fa-bell step-icons"></i>
+                            <span class="">Remind me</span>
+                        </div>
+                        <div class="sub-list-step">
+                            <i class="fa fa-calendar-alt step-icons"></i>
+                            <span class="">Add due date</span>
+                        </div>
+                        <div class="sub-list-last-step"></div>
+                        <i class="fas fa-calendar step-icons"></i>
+                        <span class="">Repeat</span>
+                    </div>
+                </div>
+                <div class="bottom-list">
+                    <i class="fa fa-sun step-icons"></i>
+                    <span class="">Pick a Category</span>
+                </div>
+                <div class="bottom-list">
+                    <i class="fa fa-paperclip step-icons"></i>
+                    <span class="">Add File</span>
+                </div>
+                <div class="bottom-list">
+                    <textarea rows=4 style="width: 325px;"> </textarea></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="toDo.js"></script>
+</body>
+
+</html>
