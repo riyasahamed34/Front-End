@@ -1,0 +1,106 @@
+.topnav, .topnavi {
+    background-color: #29a8e7;
+    overflow: hidden;
+  }
+
+ body {
+  height: auto;
+	margin: auto;
+  }
+  
+  .topnav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+  }
+
+  .sidenav {
+    float: right;
+  }
+  
+.topnav input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 20%;
+    margin-right: 16px;
+    font-size: 17px;
+    background-size: 0%;
+  }  
+ 
+  li {
+    list-style: none;
+  }
+
+ .grid-left {
+  height: 560px;
+  background-color: #f5f5f5;
+  display: inline-block;
+  width:20.6%
+  
+}
+.grid-right {
+  
+  vertical-align: top;
+  display: inline-block;
+  width:57%
+}
+
+.grid-last{
+  background-color: #f5f5f5;
+  vertical-align: top;
+  display: inline-block;
+  width: 21%;
+}
+
+.grid-left ul, .grid-left li, .grid-last ul, .grid-last li {
+  cursor: pointer;
+  padding: 20px 10px 10px 10px;
+}
+
+.list, .addingCategory {
+  padding: 10px;
+}
+
+.list li i, .subTask-lastList i {
+  padding-right: 15px;
+}
+
+ .category-name, .adding-task {
+  padding: 10px;
+}
+
+.category-tasks ul  {
+  padding-left: 10px;
+}
+
+.category-tasks ul li {
+ padding: 20px 20px 20px 0px;
+ font-size: 20px;
+ border-bottom: 1px solid #DCDCDC;
+}
+
+.assigned-task-value, .userInput, .assigned-sub-task-value {
+  padding-left: 15px;
+}
+
+.sub-list-step {
+  padding-bottom: 10px;
+}
+
+.subTask-lastList {
+  padding-bottom: 20px;
+  
+}
+
+#sub-task-list li {
+  padding-left: 0px;
+  padding-top: 10px;
+}
+
+#sub-task-list {
+  margin: 0px;
+  padding: 10px 0px ;
+}
